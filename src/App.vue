@@ -2,11 +2,20 @@
 import { RouterView } from "vue-router";
 import { ref } from "vue";
 import type { TabsPaneContext } from "element-plus";
+import router from "@/router";
 
 const activeName = ref("formatCitation");
 
 const handleClick = (tab: TabsPaneContext, event: Event) => {
   console.log(tab, event);
+  switch (tab.props.name) {
+    case "formatCitation":
+      router.push("/");
+      break;
+    case "citation":
+      router.push("/citation");
+      break;
+  }
 };
 </script>
 
@@ -25,6 +34,7 @@ const handleClick = (tab: TabsPaneContext, event: Event) => {
             @tab-click="handleClick"
           >
             <el-tab-pane label="格式化引用" name="formatCitation" />
+            <el-tab-pane label="文献引用" name="citation" />
           </el-tabs>
         </el-row>
       </el-header>

@@ -7,19 +7,22 @@ import { useDark } from "@vueuse/core";
 
 const isDark = useDark();
 
-const activeName = ref("formatCitation");
+const activeName = ref("latex");
 
 const handleClick = (tab: TabsPaneContext, event: Event) => {
   console.log(tab, event);
   switch (tab.props.name) {
     case "formatCitation":
-      router.push("/");
+      router.push("/formatpdfcitation");
       break;
     case "citation":
       router.push("/citation");
       break;
     case "document":
       router.push("/docs");
+      break;
+    case "latex":
+      router.push("/");
       break;
   }
 };
@@ -55,9 +58,10 @@ const handleClick = (tab: TabsPaneContext, event: Event) => {
             class="tabs"
             @tab-click="handleClick"
           >
-            <el-tab-pane label="格式化引用" name="formatCitation" />
+            <el-tab-pane label="格式化 PDF 引用复制" name="formatCitation" />
             <el-tab-pane label="文献引用" name="citation" />
             <el-tab-pane label="常用文档" name="document" />
+            <el-tab-pane label="Latex 写作" name="latex" />
           </el-tabs>
         </el-row>
       </el-header>

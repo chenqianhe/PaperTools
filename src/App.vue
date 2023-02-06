@@ -3,6 +3,9 @@ import { RouterView } from "vue-router";
 import { ref } from "vue";
 import type { TabsPaneContext } from "element-plus";
 import router from "@/router";
+import { useDark } from "@vueuse/core";
+
+const isDark = useDark();
 
 const activeName = ref("formatCitation");
 
@@ -26,8 +29,24 @@ const handleClick = (tab: TabsPaneContext, event: Event) => {
   <div class="container">
     <el-container>
       <el-header height="100">
-        <el-row>
+        <el-row id="header">
           <h1>论文工具</h1>
+          <div id="other-info">
+            <el-switch
+              v-model="isDark"
+              inline-prompt
+              active-text="夜间"
+              inactive-text="日间"
+              size="large"
+              style="--el-switch-on-color: #303133"
+            />
+            <el-link
+              type="info"
+              href="https://github.com/chenqianhe/PaperTools"
+              target="_blank"
+              >GitHub</el-link
+            >
+          </div>
         </el-row>
         <el-row>
           <el-tabs
@@ -61,6 +80,23 @@ const handleClick = (tab: TabsPaneContext, event: Event) => {
   height: 100%;
 
   margin-bottom: 80px;
+}
+
+#header {
+  align-items: center;
+  justify-content: space-between;
+
+  #other-info {
+    margin-right: 15px;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    .el-switch {
+      margin-right: 30px;
+    }
+  }
 }
 
 .tabs {

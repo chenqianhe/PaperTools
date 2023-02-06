@@ -15,6 +15,9 @@ const handleClick = (tab: TabsPaneContext, event: Event) => {
     case "citation":
       router.push("/citation");
       break;
+    case "document":
+      router.push("/docs");
+      break;
   }
 };
 </script>
@@ -35,6 +38,7 @@ const handleClick = (tab: TabsPaneContext, event: Event) => {
           >
             <el-tab-pane label="格式化引用" name="formatCitation" />
             <el-tab-pane label="文献引用" name="citation" />
+            <el-tab-pane label="常用文档" name="document" />
           </el-tabs>
         </el-row>
       </el-header>

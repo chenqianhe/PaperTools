@@ -18,15 +18,10 @@
 <script setup lang="ts">
 const contents = [
   {
-    name: "MyBib",
-    website: "https://www.mybib.com/",
+    name: "Cmd Markdown 公式指导手册",
+    website: "https://ericp.cn/cmd",
     intro:
-      "MyBib 是一个在线的文献管理工具，可以帮助你管理文献，生成引用列表，生成文献引用",
-  },
-  {
-    name: "Cite This For Me",
-    website: "https://www.citethisforme.com/",
-    intro: "创建 Harvard, APA & MLA 引用",
+      "本文为 MathJax 在 Cmd Markdown 环境下的常用语法指引。Cmd Markdown 编辑阅读器支持 Latex 编辑显示支持",
   },
 ];
 </script>

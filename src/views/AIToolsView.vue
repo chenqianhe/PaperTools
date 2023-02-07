@@ -26,7 +26,7 @@ const contents = [
     name: "MyScript",
     website: "https://webdemo.myscript.com/",
     intro:
-      "1. 数学：编写您的计算、方程式、化学公式并立即获得结果。\n2. 写：使用我们的教程编写文本、预览和更改识别结果并发现所有功能。\n3. 图表：绘制线条和形状、编写文本、预览并导出为 Microsoft PowerPoint 格式。",
+      "1. 数学：编写您的计算、方程式、化学公式并立即获得结果。\n2. 写：使用我们的教程编写文本、预览和更改识别结果并发现所有功能。\n3. 图表：绘制线条和形状、编写文本、预览并导出为 Microsoft PowerPoint 格式",
   },
   {
     name: "火龙果写作",

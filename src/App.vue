@@ -24,6 +24,9 @@ const handleClick = (tab: TabsPaneContext, event: Event) => {
     case "latex":
       router.push("/");
       break;
+    case "translate":
+      router.push("/translate");
+      break;
   }
 };
 </script>
@@ -58,10 +61,11 @@ const handleClick = (tab: TabsPaneContext, event: Event) => {
             class="tabs"
             @tab-click="handleClick"
           >
-            <el-tab-pane label="格式化 PDF 引用复制" name="formatCitation" />
+            <el-tab-pane label="Latex 写作" name="latex" />
+            <el-tab-pane label="翻译" name="translate" />
             <el-tab-pane label="文献引用" name="citation" />
             <el-tab-pane label="常用文档" name="document" />
-            <el-tab-pane label="Latex 写作" name="latex" />
+            <el-tab-pane label="格式化 PDF 引用复制" name="formatCitation" />
           </el-tabs>
         </el-row>
       </el-header>

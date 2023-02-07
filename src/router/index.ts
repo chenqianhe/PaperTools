@@ -3,6 +3,7 @@ import CitationFormatView from "@/views/CitationFormatView.vue";
 import CitationView from "@/views/CitationView.vue";
 import DocsView from "@/views/DocsView.vue";
 import LatexView from "@/views/LatexView.vue";
+import TranslateView from "@/views/TranslateView.vue";
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -26,6 +27,11 @@ const router = createRouter({
       path: "/",
       name: "Latex",
       component: LatexView,
+    },
+    {
+      path: "/translate",
+      name: "Translate",
+      component: TranslateView,
     },
   ],
 });

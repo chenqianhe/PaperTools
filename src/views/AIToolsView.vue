@@ -18,6 +18,12 @@
 <script setup lang="ts">
 const contents = [
   {
+    name: "ChatGPT",
+    website: "https://chat.openai.com",
+    intro:
+      "ChatGPT是一款人工智能技术驱动的自然语言处理工具。它能够通过学习和理解人类的语言来进行对话，还能根据聊天的上下文进行互动，真正像人类一样来聊天交流，甚至能完成撰写邮件、视频脚本、文案、翻译、代码等任务",
+  },
+  {
     name: "Latex 公式编辑器",
     website: "https://www.latexlive.com/",
     intro: "在线编辑 Latex 数学公式。支持图片识别数学公式，并转换为 Latex 代码",

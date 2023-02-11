@@ -9,6 +9,15 @@ const isDark = useDark();
 
 const activeName = ref("latex");
 
+const beforeLeave = (activeName: string) => {
+  if (activeName === "formatPDFText") {
+    return new Promise((resolve) => {
+      window.open("https://laorange.gitee.io/paper-assistant/");
+      resolve(false);
+    });
+  }
+};
+
 const handleClick = (tab: TabsPaneContext, event: Event) => {
   console.log(tab, event);
   switch (tab.props.name) {
@@ -30,6 +39,9 @@ const handleClick = (tab: TabsPaneContext, event: Event) => {
     case "aiTools":
       router.push("/aitools");
       break;
+    // case "formatPDFText":
+    //   window.open("https://laorange.gitee.io/paper-assistant/");
+    //   break;
   }
 };
 </script>
@@ -63,13 +75,15 @@ const handleClick = (tab: TabsPaneContext, event: Event) => {
             type="card"
             class="tabs"
             @tab-click="handleClick"
+            :before-leave="beforeLeave"
           >
             <el-tab-pane label="Latex 写作" name="latex" />
             <el-tab-pane label="翻译" name="translate" />
             <el-tab-pane label="文献引用" name="citation" />
             <el-tab-pane label="AI 工具" name="aiTools" />
             <el-tab-pane label="常用文档" name="document" />
-            <el-tab-pane label="格式化 PDF 引用复制" name="formatCitation" />
+            <el-tab-pane label="格式化 PDF 复制引用" name="formatCitation" />
+            <el-tab-pane label="格式化 PDF 复制文本" name="formatPDFText" />
           </el-tabs>
         </el-row>
       </el-header>

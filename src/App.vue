@@ -39,9 +39,6 @@ const handleClick = (tab: TabsPaneContext, event: Event) => {
     case "aiTools":
       router.push("/aitools");
       break;
-    // case "formatPDFText":
-    //   window.open("https://laorange.gitee.io/paper-assistant/");
-    //   break;
   }
 };
 </script>

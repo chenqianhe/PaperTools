@@ -1,46 +1,34 @@
-# paper-tools
+# Paper Tools
 
-This template should help get you started developing with Vue 3 in Vite.
+https://papertools.intrailblaze.com/
 
-## Recommended IDE Setup
+Paper Tools 是一个专注于论文写作的工具集链接库。我们收集并整理了各种与论文写作相关的实用网站和工具，目标是帮助广大学者、研究人员和学生在写作过程中提升效率、提升质量。我们搜罗的工具网站涵盖了从 Latex 工具、翻译工具、文献引用工具、AI 工具，到常用文档、格式化 PDF 复制引用、其他格式化 PDF 复制文本工具等多个方面。
 
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur) + [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin).
+## 工具网站介绍
+1. Latex 工具网站
 
-## Type Support for `.vue` Imports in TS
+Latex 是一个高效、专业的排版系统，特别适合于科技论文的写作。我们收录了多个优秀的 Latex 工具网站，可为你提供大量有用的模板和工具，帮助你更有效地利用 Latex。
 
-TypeScript cannot handle type information for `.vue` imports by default, so we replace the `tsc` CLI with `vue-tsc` for type checking. In editors, we need [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin) to make the TypeScript language service aware of `.vue` types.
+2. 翻译工具网站
 
-If the standalone TypeScript plugin doesn't feel fast enough to you, Volar has also implemented a [Take Over Mode](https://github.com/johnsoncodehk/volar/discussions/471#discussioncomment-1361669) that is more performant. You can enable it by the following steps:
+论文写作过程中，翻译是必不可少的一环。我们收录了多个高质量的翻译工具网站，旨在帮助你更好地理解外文文献，或是将自己的论文翻译成英文或其他语言。
 
-1. Disable the built-in TypeScript Extension
-    1) Run `Extensions: Show Built-in Extensions` from VSCode's command palette
-    2) Find `TypeScript and JavaScript Language Features`, right click and select `Disable (Workspace)`
-2. Reload the VSCode window by running `Developer: Reload Window` from the command palette.
+3. 文献引用工具网站
 
-## Customize configuration
+我们提供了一系列文献引用工具网站，帮助你更方便、更准确地管理和引用文献。这些工具能自动识别并提供各种引用格式，让你的引文格式正确无误。
 
-See [Vite Configuration Reference](https://vitejs.dev/config/).
+4. AI 工具网站
 
-## Project Setup
+我们收集了多个与 AI 相关的工具网站，能帮助你在写作过程中快速获取信息，提升文本的准确性和流畅性。
 
-```sh
-npm install
-```
+5. 常用文档网站
 
-### Compile and Hot-Reload for Development
+我们收录了多种提供常用文档模板的网站，方便你快速完成各种类型的文档写作。
 
-```sh
-npm run dev
-```
+6. 格式化 PDF 复制引用工具网站
 
-### Type-Check, Compile and Minify for Production
+我们收集了一些专门处理 PDF 文献引用的工具网站，能帮助你更便捷地复制 PDF 文献中的引用信息，无论是行内引用还是文末引用，都能一键完成，极大地提高了效率。
 
-```sh
-npm run build
-```
+7. 其他格式化 PDF 复制文本工具网站
 
-### Lint with [ESLint](https://eslint.org/)
-
-```sh
-npm run lint
-```
+此外，我们还收录了多个提供 PDF 复制工具的网站，能帮你更方便地复制文本、表格、公式等，全部都能保持原有格式。
